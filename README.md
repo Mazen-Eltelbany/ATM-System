@@ -61,8 +61,8 @@ git clone https://github.com/Mazen-Eltelbany/ATM-System.git
 -"If you want to add more clients make this"
 
 ```
-1- g++ Client-Account-Manager.cpp -o CAM
-2- ./CAM
+     g++ Client-Account-Manager.cpp -o CAM
+    ./CAM
 ```
 
 **3-Run:**
