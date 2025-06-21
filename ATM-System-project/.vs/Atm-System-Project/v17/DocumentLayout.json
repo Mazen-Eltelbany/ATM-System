@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ATM-System\\",
+  "WorkspaceRootPath": "D:\\reprository\\ATM-System\\ATM-System-project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A494E7-0368-428E-B426-ABCEAE567A2F}|Atm-System-Project\\Atm-System-Project.vcxproj|D:\\ATM-System\\Atm-System-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{59A494E7-0368-428E-B426-ABCEAE567A2F}|Atm-System-Project\\Atm-System-Project.vcxproj|D:\\reprository\\ATM-System\\ATM-System-project\\Atm-System-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{59A494E7-0368-428E-B426-ABCEAE567A2F}|Atm-System-Project\\Atm-System-Project.vcxproj|solutionrelative:Atm-System-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Atm-System-Project.cpp",
-              "DocumentMoniker": "D:\\ATM-System\\Atm-System-Project.cpp",
+              "DocumentMoniker": "D:\\reprository\\ATM-System\\ATM-System-project\\Atm-System-Project.cpp",
               "RelativeDocumentMoniker": "Atm-System-Project.cpp",
-              "ToolTip": "D:\\ATM-System\\Atm-System-Project.cpp",
+              "ToolTip": "D:\\reprository\\ATM-System\\ATM-System-project\\Atm-System-Project.cpp",
               "RelativeToolTip": "Atm-System-Project.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-21T07:14:41.205Z",
               "EditorCaption": ""

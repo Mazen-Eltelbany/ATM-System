@@ -68,8 +68,8 @@ struct suser {
     int permissions;
     bool markfordel = false;
 };
-const string clientfilename = "../cli.txt";
-const string usersfilename = "../users.txt";
+const string clientfilename = "cli.txt";
+const string usersfilename = "users.txt";
 suser currentuser;
 
 
