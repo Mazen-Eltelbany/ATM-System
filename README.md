@@ -1,50 +1,67 @@
-# Client Account Management System
+# ATM & Client Account Manager System
 
-## A simple terminal-based application built in **C++** to manage bank clients. It allows users to **view, add, update, delete, and search** for client accounts. Data is stored in a local text file and handled via structured records.
+This project contains two C++ applications:
 
-## 🚀 Features
+- **ATM System**
+- **Client Account Manager**
 
-- 👤Admin/user login with permissions(New Feature)
-- 📄 View all client accounts with detailed info
-- ➕ Add new clients with account data
-- 🔄 Update existing client details
-- ❌ Delete clients by account number
-- 🔍 Find and display client info by account number
-- 💾 All data is stored in a plain text file for simplicity
+## ✨ Features
 
----
+### 🔐 Client Account Manager
 
-## 🛠️ Technologies Used
+- Add, delete, update client records
+- Search clients by account number
+- Secure PIN management
+- Data stored in `cli.txt` file
+- Input validation and formatting
 
-- **Language:** C++
-- **File I/O:** `fstream` for reading and writing client data
+### 🏧 ATM System
 
-### 📦 How to Run<br>
+- PIN-based login
+- Withdraw and deposit operations
+- Quick withdraw (predefined amounts)
+- Check balance
+- Syncs client data with `cli.txt`
+- Secure and user-friendly console UI
 
-1-**Clone the repo:**
+### 📂 Shared Functionality
+
+- Both apps use the **same client file (`cli.txt`)**
+- Easy integration between client management and ATM usage
+- Modular structure for future expansion
+
+Both applications read/write from the **same shared file (`cli.txt`)**.
+
+> 💡 If you want to install **Client Account Manager only**, visit:  
+> [📦 Client Account Manager Repository](https://github.com/Mazen-Eltelbany/Client-Account-Manager)
+
+## 🔧 How to Run
+
+**1- Clone the repository:**
 
 ```bash
-git clone https://github.com/Mazen-Eltelbany/Client-Account-Manager.git
+git clone https://github.com/Mazen-Eltelbany/ATM-System.git
 ```
 
-2-**Navigate to the project:**
+**2- Navigate to the project**
 
 ```bash
-cd Client-Account-Manager
+   1- cd ATM-System
+   2- cd ATM-System-project
 ```
 
-3- **Compile:**
-"If you don't have a g++ compiler download from this video"
+**3- Compile:**  
+ "If you don't have a g++ compiler download from this video"  
 <a href="https://youtu.be/GxFiUEO_3zM">The Installation guide</a>
 
 ```bash
-g++ Client-Account-Manager.cpp -o CAM
+    g++ ATM-System-project.cpp -o ATM
 ```
 
-4- **Run:**
+**3-Run:**
 
 ```bash
-./CAM
+ ./ATM
 ```
 
 ## Author
