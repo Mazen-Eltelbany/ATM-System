@@ -17,12 +17,13 @@ This project contains two C++ applications:
 
 ### 🏧 ATM System
 
-- PIN-based login
-- Withdraw and deposit operations
-- Quick withdraw (predefined amounts)
-- Check balance
-- Syncs client data with `cli.txt`
-- Secure and user-friendly console UI
+- 🔐 PIN-based login for secure user authentication
+- 💸 Withdraw and deposit operations with balance validation
+- ⚡ Quick withdraw using predefined cash amounts for fast transactions
+- 🧾 Check balance anytime during a session
+- 🔁 Change password functionality for enhanced account security
+- 📂 Client data synced with cli.txt (shared with Client Account Manager)
+- 💻 User-friendly console interface with clear navigation and prompts
 
 ### 📂 Shared Functionality
 
