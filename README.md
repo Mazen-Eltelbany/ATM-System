@@ -38,6 +38,8 @@ Both applications read/write from the **same shared file (`cli.txt`)**.
 
 ## 🔧 How to Run
 
+### Option 1:Using Git
+
 **1- Clone the repository:**
 
 ```bash
@@ -70,6 +72,27 @@ cd ATM-System-project
 
 ```bash
  ./ATM
+```
+
+### Option 2: Download As ZIP:
+
+**1- Download the ZIP:**
+
+- Go to the repo: ATM-System on GitHub
+- Click the green "Code" button → Download ZIP
+- Extract it anywhere on your computer
+  **2- Open the Folder:**
+
+```bash
+cd ATM-System-main
+cd ATM-System-project
+```
+
+**3- Compile And Run:**
+
+```bash
+g++ ATM-System-project.cpp -o ATM
+./ATM
 ```
 
 ## Author
