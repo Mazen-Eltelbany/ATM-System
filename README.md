@@ -81,6 +81,7 @@ cd ATM-System-project
 - Go to the repo: ATM-System on GitHub
 - Click the green "Code" button → Download ZIP
 - Extract it anywhere on your computer
+
   **2- Open the Folder:**
 
 ```bash
