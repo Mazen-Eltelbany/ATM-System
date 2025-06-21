@@ -46,8 +46,8 @@ git clone https://github.com/Mazen-Eltelbany/ATM-System.git
 **2- Navigate to the project**
 
 ```bash
-    cd ATM-System
-    cd ATM-System-project
+cd ATM-System
+cd ATM-System-project
 ```
 
 **3- Compile:**  
@@ -58,11 +58,11 @@ git clone https://github.com/Mazen-Eltelbany/ATM-System.git
     g++ ATM-System-project.cpp -o ATM
 ```
 
--"If you want to add more clients make this"
+-"If you want to Open Client-Account-Manager"
 
 ```
-     g++ Client-Account-Manager.cpp -o CAM
-    ./CAM
+ g++ Client-Account-Manager.cpp -o CAM
+./CAM
 ```
 
 **3-Run:**

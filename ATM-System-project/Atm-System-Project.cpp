@@ -6,6 +6,7 @@
 #include <cctype>
 #include <fstream>
 #include <iomanip>
+#include <filesystem>
 typedef double db;
 #define vs vector<string>
 #define vi vector<int>
@@ -40,7 +41,8 @@ enum enprocessinmainmenu{
 	ennormalwithdraw = 2,
 	endeposit=3,
 	encheckbalance = 4,
-	enlogout = 5,
+	enchangepassword=5,
+	enlogout = 6,
 };
 string  readaccnum() {
 	string AC;
@@ -106,6 +108,9 @@ vector<clients>getclientsfromffile(string filename) {
 			vcl.push_back(cl);
 		}
 		file.close();
+	}
+	else {
+		cout << "error file cann't open\n";
 	}
 	return vcl;
 }
@@ -276,12 +281,47 @@ void checkbalancescreen() {
 	cout << "==================================\n";
 	cout << "Your Balance is: " << currentclient.balance << endl;
 }
+string readanewpass() {
+	string pass;
+	do {
+		cout << "Enter the new password?(4 Numbers) ";
+		cin >> pass;
+	} while (pass.size() != 4);
+	
+	return pass;
+}
+void changepassword() {
+	vector<clients>vcl = getclientsfromffile(clientfilename);
+	for (clients& c : vcl) {
+		if (c.accnum == currentclient.accnum) {
+			
+			string newpass = readanewpass();
+			char ans = 'y';
+			cout << "Are you sure you want to change password?y/n? ";
+			cin >> ans;
+			if (tolower(ans) == 'y') {
+				c.pincode = newpass;
+				currentclient.pincode = newpass;
+				saveclientdatatofile(clientfilename, vcl);
+				cout << "Password changed successfully.\n";
+			}
+			return;
+		}
+	}
+}
+void printchangepasswordscreen() {
+	system("cls");
+	cout << "=======================================\n";
+	cout << "\t\tChange Password Screen\n";
+	cout << "=======================================\n";
+	changepassword();
+}
 int readchoiceofmainmenu() {
 	int choice=0;
 	do {
-		cout << "Choose what do you want to do from [1 to 5]? ";
+		cout << "Choose what do you want to do from [1 to 6]? ";
 		cin >> choice;
-	} while (choice < 1 || choice > 5);
+	} while (choice < 1 || choice > 6);
 	return choice;
 }
 void operationonatmmainmenu(int choice) {
@@ -302,6 +342,10 @@ void operationonatmmainmenu(int choice) {
 		checkbalancescreen();
 		gobacktoatmmainmenu();
 		break;
+	case enprocessinmainmenu::enchangepassword:
+		printchangepasswordscreen();
+		gobacktoatmmainmenu();
+		break;
 	case enprocessinmainmenu::enlogout:
 		login();
 		break;
@@ -316,7 +360,8 @@ void atmmainmenu() {
 	cout << "\t[2] Normal Withdraw\n";
 	cout << "\t[3] Deposit\n";
 	cout << "\t[4] Check Balance\n";
-	cout << "\t[5] Logout\n";
+	cout << "\t[5] Change Password\n";
+	cout << "\t[6] Logout\n";
 	cout << "====================================\n";
 	operationonatmmainmenu(readchoiceofmainmenu());
 }
