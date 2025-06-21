@@ -82,7 +82,7 @@ cd ATM-System-project
 - Click the green "Code" button → Download ZIP
 - Extract it anywhere on your computer
 
-  **2- Open the Folder:**
+**2- Open The Folder:**
 
 ```bash
 cd ATM-System-main
