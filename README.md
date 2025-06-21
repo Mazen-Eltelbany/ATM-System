@@ -46,8 +46,8 @@ git clone https://github.com/Mazen-Eltelbany/ATM-System.git
 **2- Navigate to the project**
 
 ```bash
-   1- cd ATM-System
-   2- cd ATM-System-project
+    cd ATM-System
+    cd ATM-System-project
 ```
 
 **3- Compile:**  
