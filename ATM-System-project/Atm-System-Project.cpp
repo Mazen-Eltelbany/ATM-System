@@ -6,12 +6,11 @@
 #include <cctype>
 #include <fstream>
 #include <iomanip>
-#include <filesystem>
 typedef double db;
 #define vs vector<string>
 #define vi vector<int>
 using namespace std;
-const string clientfilename = "../cli.txt";
+const string clientfilename = "cli.txt";
 struct clients {
 	string accnum;
 	string pincode;
