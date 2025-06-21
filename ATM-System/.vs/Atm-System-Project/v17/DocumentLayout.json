@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ATM-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59A494E7-0368-428E-B426-ABCEAE567A2F}|Atm-System-Project\\Atm-System-Project.vcxproj|D:\\ATM-System\\Atm-System-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59A494E7-0368-428E-B426-ABCEAE567A2F}|Atm-System-Project\\Atm-System-Project.vcxproj|solutionrelative:Atm-System-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Atm-System-Project.cpp",
+              "DocumentMoniker": "D:\\ATM-System\\Atm-System-Project.cpp",
+              "RelativeDocumentMoniker": "Atm-System-Project.cpp",
+              "ToolTip": "D:\\ATM-System\\Atm-System-Project.cpp",
+              "RelativeToolTip": "Atm-System-Project.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-21T07:14:41.205Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
