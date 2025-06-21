@@ -11,7 +11,7 @@ typedef double db;
 #define vs vector<string>
 #define vi vector<int>
 using namespace std;
-const string clientfilename = "cli.txt";
+const string clientfilename = "../cli.txt";
 struct clients {
 	string accnum;
 	string pincode;
@@ -284,13 +284,13 @@ void checkbalancescreen() {
 string readanewpass() {
 	string pass;
 	do {
-		cout << "Enter the new password?(4 Numbers) ";
+		cout << "Enter the new Pin Code?(4 Numbers) ";
 		cin >> pass;
 	} while (pass.size() != 4);
 	
 	return pass;
 }
-void changepassword() {
+void changepincode() {
 	vector<clients>vcl = getclientsfromffile(clientfilename);
 	for (clients& c : vcl) {
 		if (c.accnum == currentclient.accnum) {
@@ -309,12 +309,12 @@ void changepassword() {
 		}
 	}
 }
-void printchangepasswordscreen() {
+void printchangepincodescreen() {
 	system("cls");
 	cout << "=======================================\n";
-	cout << "\t\tChange Password Screen\n";
+	cout << "\tChange Pin Code Screen\n";
 	cout << "=======================================\n";
-	changepassword();
+	changepincode();
 }
 int readchoiceofmainmenu() {
 	int choice=0;
@@ -343,7 +343,7 @@ void operationonatmmainmenu(int choice) {
 		gobacktoatmmainmenu();
 		break;
 	case enprocessinmainmenu::enchangepassword:
-		printchangepasswordscreen();
+		printchangepincodescreen();
 		gobacktoatmmainmenu();
 		break;
 	case enprocessinmainmenu::enlogout:
@@ -360,7 +360,7 @@ void atmmainmenu() {
 	cout << "\t[2] Normal Withdraw\n";
 	cout << "\t[3] Deposit\n";
 	cout << "\t[4] Check Balance\n";
-	cout << "\t[5] Change Password\n";
+	cout << "\t[5] Change Pin Code\n";
 	cout << "\t[6] Logout\n";
 	cout << "====================================\n";
 	operationonatmmainmenu(readchoiceofmainmenu());
